@@ -1,0 +1,432 @@
+2017-07-02 10:09:23.972  INFO 6496 --- [restartedMain] c.k.bookapp.BookappApplication           : Starting BookappApplication on DESKTOP-7AIHHD4 with PID 6496 (E:\bookapp\target\classes started by karuppasamy in E:\bookapp)
+2017-07-02 10:09:23.974  INFO 6496 --- [restartedMain] c.k.bookapp.BookappApplication           : No active profile set, falling back to default profiles: default
+2017-07-02 10:09:25.172  INFO 6496 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138dd55: startup date [Sun Jul 02 10:09:25 IST 2017]; root of context hierarchy
+2017-07-02 10:09:58.014  INFO 6496 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-02 10:09:58.151  INFO 6496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-02 10:09:58.155  INFO 6496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-02 10:10:00.417  INFO 6496 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-02 10:10:00.418  INFO 6496 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 35322 ms
+2017-07-02 10:10:01.308  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-02 10:10:01.309  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-02 10:10:01.309  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-02 10:10:01.309  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-02 10:10:01.310  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-02 10:10:01.311  INFO 6496 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-02 10:10:01.312  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-02 10:10:01.312  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-02 10:10:01.312  INFO 6496 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-02 10:10:05.173  INFO 6496 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-02 10:10:08.183  INFO 6496 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/books?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-02 10:10:08.649  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.270s)
+2017-07-02 10:10:10.672  INFO 6496 --- [restartedMain] o.f.c.i.metadatatable.MetaDataTableImpl  : Creating Metadata table: `books`.`schema_version`
+2017-07-02 10:10:20.506  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `books`: << Empty Schema >>
+2017-07-02 10:10:20.507  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `books` to version 1 - create books
+2017-07-02 10:10:23.049  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `books` to version 2 - create roles
+2017-07-02 10:10:24.098  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `books` to version 3 - create users
+2017-07-02 10:10:25.401  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `books` to version 4 - create orders
+2017-07-02 10:10:26.228  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `books` to version 5 - create orderItems
+2017-07-02 10:10:27.246  INFO 6496 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema `books` (execution time 00:16.578s).
+2017-07-02 10:10:33.453  INFO 6496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-02 10:10:34.152  INFO 6496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-02 10:10:37.534  INFO 6496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-02 10:10:37.539  INFO 6496 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-02 10:10:37.545  INFO 6496 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-02 10:10:38.825  INFO 6496 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-02 10:10:41.917  INFO 6496 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-07-02 10:10:43.739  INFO 6496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 10:10:47.398  WARN 6496 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+2017-07-02 10:10:47.410  INFO 6496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 10:10:47.466  INFO 6496 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-02 10:10:47.649  INFO 6496 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-02 10:10:47.728 ERROR 6496 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.karuppasamy.bookapp.BookappApplication.main(BookappApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at com.karuppasamy.bookapp.controller.OrderItemcontroller.<init>(OrderItemcontroller.java:39) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 24 common frames omitted
+
+2017-07-02 12:11:45.249  INFO 6260 --- [restartedMain] c.k.bookapp.BookappApplication           : Starting BookappApplication on DESKTOP-7AIHHD4 with PID 6260 (E:\bookapp\target\classes started by karuppasamy in E:\bookapp)
+2017-07-02 12:11:45.267  INFO 6260 --- [restartedMain] c.k.bookapp.BookappApplication           : No active profile set, falling back to default profiles: default
+2017-07-02 12:11:45.657  INFO 6260 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e2641b: startup date [Sun Jul 02 12:11:45 IST 2017]; root of context hierarchy
+2017-07-02 12:12:15.149  INFO 6260 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-02 12:12:15.335  INFO 6260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-02 12:12:15.338  INFO 6260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-02 12:12:18.031  INFO 6260 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-02 12:12:18.032  INFO 6260 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 32398 ms
+2017-07-02 12:12:18.663  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-02 12:12:18.664  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-02 12:12:18.665  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-02 12:12:18.665  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-02 12:12:18.666  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-02 12:12:18.668  INFO 6260 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-02 12:12:18.669  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-02 12:12:18.669  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-02 12:12:18.670  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-02 12:12:20.144  INFO 6260 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-02 12:12:21.824  INFO 6260 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/books?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-02 12:12:22.483  INFO 6260 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.594s)
+2017-07-02 12:12:22.771  INFO 6260 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `books`: 5
+2017-07-02 12:12:22.774  INFO 6260 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `books` is up to date. No migration necessary.
+2017-07-02 12:12:25.823  INFO 6260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-02 12:12:25.932  INFO 6260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-02 12:12:26.745  INFO 6260 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-02 12:12:26.748  INFO 6260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-02 12:12:26.750  INFO 6260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-02 12:12:27.031  INFO 6260 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-02 12:12:27.654  INFO 6260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-07-02 12:12:34.580  INFO 6260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 12:12:40.147  WARN 6260 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+2017-07-02 12:12:40.158  INFO 6260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 12:12:40.312  INFO 6260 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-02 12:12:40.812  INFO 6260 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-02 12:12:40.917 ERROR 6260 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.karuppasamy.bookapp.BookappApplication.main(BookappApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at com.karuppasamy.bookapp.controller.OrderItemcontroller.<init>(OrderItemcontroller.java:39) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 24 common frames omitted
+
+2017-07-02 13:06:43.757  INFO 8784 --- [restartedMain] c.k.bookapp.BookappApplication           : Starting BookappApplication on DESKTOP-7AIHHD4 with PID 8784 (E:\bookapp\target\classes started by karuppasamy in E:\bookapp)
+2017-07-02 13:06:43.797  INFO 8784 --- [restartedMain] c.k.bookapp.BookappApplication           : No active profile set, falling back to default profiles: default
+2017-07-02 13:06:44.278  INFO 8784 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9c38f8: startup date [Sun Jul 02 13:06:44 IST 2017]; root of context hierarchy
+2017-07-02 13:07:07.422  INFO 8784 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9000 (http)
+2017-07-02 13:07:07.580  INFO 8784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-02 13:07:07.582  INFO 8784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-02 13:07:09.111  INFO 8784 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-02 13:07:09.112  INFO 8784 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 24853 ms
+2017-07-02 13:07:10.069  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-02 13:07:10.070  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-02 13:07:10.081  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-02 13:07:10.082  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-02 13:07:10.082  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-02 13:07:10.084  INFO 8784 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-07-02 13:07:10.085  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-02 13:07:10.085  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-02 13:07:10.086  INFO 8784 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-02 13:07:11.141  INFO 8784 --- [restartedMain] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-07-02 13:07:14.491  INFO 8784 --- [restartedMain] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:mysql://localhost:3306/books?useSSL=false&zeroDateTimeBehavior=convertToNull (MySQL 5.7)
+2017-07-02 13:07:15.553  INFO 8784 --- [restartedMain] o.f.core.internal.command.DbValidate     : Validated 5 migrations (execution time 00:00.932s)
+2017-07-02 13:07:15.650  INFO 8784 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `books`: 5
+2017-07-02 13:07:15.651  INFO 8784 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `books` is up to date. No migration necessary.
+2017-07-02 13:07:17.562  INFO 8784 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-07-02 13:07:17.712  INFO 8784 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-07-02 13:07:18.226  INFO 8784 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-07-02 13:07:18.229  INFO 8784 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-07-02 13:07:18.233  INFO 8784 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-07-02 13:07:19.074  INFO 8784 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-02 13:07:19.635  INFO 8784 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-07-02 13:07:21.890  INFO 8784 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 13:07:23.162  WARN 8784 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+2017-07-02 13:07:23.170  INFO 8784 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-07-02 13:07:23.192  INFO 8784 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-07-02 13:07:23.292  INFO 8784 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-02 13:07:23.322 ERROR 8784 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderItemcontroller' defined in file [E:\bookapp\target\classes\com\karuppasamy\bookapp\controller\OrderItemcontroller.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.karuppasamy.bookapp.BookappApplication.main(BookappApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.karuppasamy.bookapp.controller.OrderItemcontroller]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method setUser(User) is undefined for the type Order
+	The method setTotalAmount(int) is undefined for the type Order
+	The method setStatus(String) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getBook() is undefined for the type OrderItem
+	The method getQuantity() is undefined for the type OrderItem
+	The method setQuantity(int) is undefined for the type OrderItem
+	The method setOrder(Order) is undefined for the type OrderItem
+	Book cannot be resolved to a type
+	The method setQuantity(Integer) is undefined for the type OrderItem
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method getOrderItems() is undefined for the type Order
+	The method setOrderItems(List<OrderItem>) is undefined for the type Order
+	Syntax error on token "}", delete this token
+
+	at com.karuppasamy.bookapp.controller.OrderItemcontroller.<init>(OrderItemcontroller.java:39) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_102]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_102]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 24 common frames omitted
+

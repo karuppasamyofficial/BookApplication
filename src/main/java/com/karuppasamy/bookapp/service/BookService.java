@@ -19,7 +19,7 @@ public class BookService {
 		return bookRepository.findAll();
 	}
 
-	public Book findOne(long id) {
-		return bookRepository.findOne(id);
+	public Book findOne(long isbn) {
+		return bookRepository.findOne(isbn);
 	}
 }

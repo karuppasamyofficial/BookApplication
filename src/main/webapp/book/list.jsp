@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -8,12 +9,12 @@
 </head>
 <body>
 
-	<header>
+<%-- 	
 		<div id="top">
 			<div class="bg"></div>
 			<div class="row">
 				<div id="logo"></div>
-				<nav>
+				
 					<div id="hmenu">
 						<ul>
 							<li><a href="/">Home</a></li>
@@ -29,8 +30,8 @@
 			</div>
 		</div>
 	</header>
-
-
+ --%>
+<!-- 
 	<div id="wrapperList">
 		<div id="sidebar">
 
@@ -49,7 +50,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div id="grid">
 		<c:forEach items="${book}" var="book">
 			<div class="product">
@@ -61,13 +62,13 @@
 
 					<div class="price-big">${book.price}</div>
 
-					<button class="add-cart-large">Add To Cart</button>
+					
 
 				</div>
 							<div class="make3D">
 				<div class="product-front">
 				<div class="shadow"></div>
-				<img src="${book.imageUrl}" alt="" />
+				<img src="../images/java.png" alt="" />
                 <div class="image_overlay"></div>
 					<div class="stats">
 						<div class="stats-container">

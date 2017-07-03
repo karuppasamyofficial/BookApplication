@@ -38,10 +38,10 @@ public class AuthenticationController {
 		if (user != null) {
 			session.setAttribute("USER_LOGGED", user);
 			LOGGER.info("Login Success");
-			return "redirect:../book";
+			return "redirect:../book/view";
 		} else {
 			LOGGER.error("Login Failure");
-			return "user/login";
+			return "home";
 		}
 	}
 

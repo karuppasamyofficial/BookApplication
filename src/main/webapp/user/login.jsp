@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="../auth/login" method="post">
+
 				<h1>Login</h1>
 				<div>
 					<input type="text" placeholder="Enter your Username" required
@@ -20,6 +20,6 @@
 				<div>
 					<input type="submit" value="sigin in" />
 				</div>
-			</form>
+			
 </body>
 </html>

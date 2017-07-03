@@ -74,7 +74,7 @@ public class OrderController {
 
 	@GetMapping("/cart")
 	public String cart() {
-		return "order/cart";
+		return "orders/cart";
 	}
 
 }

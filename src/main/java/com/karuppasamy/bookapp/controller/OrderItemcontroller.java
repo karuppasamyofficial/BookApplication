@@ -7,10 +7,11 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.karuppasamy.bookapp.model.Book;
 import com.karuppasamy.bookapp.model.Order;
 import com.karuppasamy.bookapp.model.OrderItem;
 import com.karuppasamy.bookapp.model.User;
@@ -23,8 +24,8 @@ public class OrderItemcontroller {
 	@Autowired
 	private BookService bookService;
 
-	@PostMapping("/addtocart")
-	public String addToCart(@RequestParam("book_isbn") long isbn, @RequestParam("quantity") Integer Quantity,
+	@GetMapping("/addtocart")
+	public String addToCart(@RequestParam("isbn") long isbn, @RequestParam("quantity") Integer Quantity,
 			HttpSession session) {
 		
 		User user = (User) session.getAttribute("USER_LOGGED");
@@ -108,8 +109,6 @@ public class OrderItemcontroller {
 		return "redirect:../orders/cart";
 
 	}
-
-}
 
 
 }

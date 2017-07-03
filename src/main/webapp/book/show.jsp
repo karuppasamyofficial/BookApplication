@@ -9,6 +9,7 @@ h2{color: MidnightBlue; text-align: center}
 th{color: MidnightBlue; text-align: center}
 </style>
 <body>
+	<form action="../orderitems/addtocart" method="get">
 	<h2>Welcome to book Management - Show Book</h2>
 	<table border = "1">
 		<tr>
@@ -29,7 +30,9 @@ th{color: MidnightBlue; text-align: center}
 			<td>${SELECTED_BOOK.content}</td>
 			<td>${SELECTED_BOOK.price}</td>
 			<td>${SELECTED_BOOK.status}</td>
-			<td><a href = "../order/addToCart">Add to Cart</a></td>
+			<td><input type="hidden" name="isbn"value="${SELECTED_BOOK.isbn}" /></td>
+				<td><input type="text" name="quantity" /></td>
+			<td><button type="submit">add to cart</button></td>
 		</tr>
 	</table>	
 </body>

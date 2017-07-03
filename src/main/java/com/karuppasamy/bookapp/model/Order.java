@@ -17,9 +17,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
-import lombok.Data;
-
-@Data
 @Entity
 @Table(name="orders")
 public class Order {
@@ -46,5 +43,62 @@ public class Order {
 	
 	@Column(name = "cancelled_date")
 	private LocalDate cancelledDate;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public void setTotalAmount(double totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public List<OrderItem> getOrderItems() {
+		return orderItems;
+	}
+
+	public void setOrderItems(List<OrderItem> orderItems) {
+		this.orderItems = orderItems;
+	}
+
+	public LocalDateTime getOrderedDate() {
+		return orderedDate;
+	}
+
+	public void setOrderedDate(LocalDateTime orderedDate) {
+		this.orderedDate = orderedDate;
+	}
+
+	public LocalDate getCancelledDate() {
+		return cancelledDate;
+	}
+
+	public void setCancelledDate(LocalDate cancelledDate) {
+		this.cancelledDate = cancelledDate;
+	}
+
 
 }

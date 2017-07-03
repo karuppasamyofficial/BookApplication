@@ -10,10 +10,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
-
-import lombok.Data;
-
-@Data
 @Entity
 @Table(name="order_items")
 public class OrderItem {
@@ -32,5 +28,37 @@ public class OrderItem {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "book_isbn")
 	private Book book;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
+	public Integer getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
+	public Book getBook() {
+		return book;
+	}
+
+	public void setBook(Book book) {
+		this.book = book;
+	}
 }
 
